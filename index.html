@@ -9,12 +9,17 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="body">
-    <header class="header">
-      <nav>
+    <!-- HEADER -->
+    <header class="header page-header">
+      <nav class="container">
         <a href="./index.html" class="logo">Web<span>Studio</span></a>
         <ul>
           <li><a href="./index.html" class="nav-header">Studio</a></li>
@@ -37,103 +42,118 @@
         </ul>
       </address>
     </header>
+
+    <!-- MAIN -->
     <main class="main-page">
+      <!-- hero -->
       <section class="section-hero-one">
-        <h1 class="hero-one">Effective Solutions for Your Business</h1>
-        <button type="button" class="style-button">Order Service</button>
+        <div class="container">
+          <h1 class="hero-one">Effective Solutions for Your Business</h1>
+          <button type="button" class="style-button">Order Service</button>
+        </div>
       </section>
       <section class="features">
-        <h2 class="title">Our features</h2>
-        <ul>
-          <li>
-            <h3 class="headings-features">Strategy</h3>
-            <p>
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <li>
-            <h3 class="headings-features">Punctuality</h3>
-            <p>
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li>
-            <h3 class="headings-features">Diligence</h3>
-            <p>
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
-          <li>
-            <h3 class="headings-features">Technologies</h3>
-            <p>
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="title hidden">Our features</h2>
+          <ul>
+            <li>
+              <h3 class="headings-features">Strategy</h3>
+              <p>
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li>
+              <h3 class="headings-features">Punctuality</h3>
+              <p>
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li>
+              <h3 class="headings-features">Diligence</h3>
+              <p>
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li>
+              <h3 class="headings-features">Technologies</h3>
+              <p>
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="examples">
-        <h2 class="title">What are we doing</h2>
-        <ul>
-          <li>
-            <img src="./images/monitor.jpg" alt="monitor image" width="360" />
-          </li>
-          <li>
-            <img
-              src="./images/smartphon.jpg"
-              alt="smartphon image"
-              width="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/NoutSmartphon.jpg"
-              alt="Nout and Smartphone image"
-              width="360"
-            />
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="title">What are we doing</h2>
+          <ul>
+            <li>
+              <img src="./images/monitor.jpg" alt="monitor image" width="360" />
+            </li>
+            <li>
+              <img
+                src="./images/smartphon.jpg"
+                alt="smartphon image"
+                width="360"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/NoutSmartphon.jpg"
+                alt="Nout and Smartphone image"
+                width="360"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- our team  -->
       <section class="team">
-        <h2 class="title">Our Team</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/MarkGuerrero.jpg"
-              alt="Mark Guerro photo"
-              width="264"
-            />
-            <h3 class="title-team">Mark Guerrero</h3>
-            <p>Product Designer</p>
-          </li>
-          <li>
-            <img src="./images/TomFord.jpg" alt="Tom Ford Photo" width="264" />
-            <h3 class="title-team">Tom Ford</h3>
-            <p>Frontend Developer</p>
-          </li>
-          <li>
-            <img
-              src="./images/CamilaGarcia.jpg"
-              alt="Camilla Garsia Photo"
-              width="264"
-            />
-            <h3 class="title-team">Camila Garcia</h3>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/DanielWilson.jpg"
-              alt="Daniel Wilson Photo"
-              width="264"
-            />
-            <h3 class="title-team">Daniel Wilson</h3>
-            <p>UI Designer</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="title">Our Team</h2>
+          <ul>
+            <li>
+              <img
+                src="./images/MarkGuerrero.jpg"
+                alt="Mark Guerro photo"
+                width="264"
+              />
+              <h3 class="title-team">Mark Guerrero</h3>
+              <p>Product Designer</p>
+            </li>
+            <li>
+              <img
+                src="./images/TomFord.jpg"
+                alt="Tom Ford Photo"
+                width="264"
+              />
+              <h3 class="title-team">Tom Ford</h3>
+              <p>Frontend Developer</p>
+            </li>
+            <li>
+              <img
+                src="./images/CamilaGarcia.jpg"
+                alt="Camilla Garsia Photo"
+                width="264"
+              />
+              <h3 class="title-team">Camila Garcia</h3>
+              <p>Marketing</p>
+            </li>
+            <li>
+              <img
+                src="./images/DanielWilson.jpg"
+                alt="Daniel Wilson Photo"
+                width="264"
+              />
+              <h3 class="title-team">Daniel Wilson</h3>
+              <p>UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">

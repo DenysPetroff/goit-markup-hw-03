@@ -9,12 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="body">
     <header class="header">
-      <nav>
+      <nav class="container">
         <a href="./index.html" class="logo">Web<span>Studio</span></a>
         <ul>
           <li><a href="./index.html" class="nav-header">Studio</a></li>
@@ -39,114 +43,120 @@
     </header>
     <main>
       <section class="portfolio">
-        <h1 class="headings-color">Porfolio</h1>
+        <div class="container">
+          <h1 class="title-portfolio hidden">Porfolio</h1>
 
-        <ul>
-          <li>
-            <button type="button" class="button-all button-filter">All</button>
-          </li>
-          <li>
-            <button type="button" class="button-webs button-filter">
-              Web Site
-            </button>
-          </li>
-          <li>
-            <button type="button" class="button-app button-filter">App</button>
-          </li>
-          <li>
-            <button type="button" class="button-desighn button-filter">
-              Design
-            </button>
-          </li>
-          <li>
-            <button type="button" class="button-marketing button-filter">
-              Marketing
-            </button>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <img
-              src="./images/banking-app-min.jpg"
-              alt="banking app interface"
-              width="360"
-            />
-            <h2 class="exampl-title">Banking App Interface Concept</h2>
-            <p>App</p>
-          </li>
-          <li>
-            <img
-              src="./images/cashless-payment-min.jpg"
-              alt="cashless paiment app intrerface"
-              width="360"
-            />
-            <h2 class="exampl-title">Cashless Payment</h2>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/meditaion-app-min.jpg"
-              alt="meditation app"
-              width="360"
-            />
-            <h2 class="exampl-title">Meditaion App</h2>
-            <p>App</p>
-          </li>
-          <li>
-            <img
-              src="./images/taxi-service-min.jpg"
-              alt="taxi photo"
-              width="360"
-            />
-            <h2 class="exampl-title">Taxi Service</h2>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/screen-illustrations-min.jpg"
-              alt="screen illustrations app"
-              width="360"
-            />
-            <h2 class="exampl-title">Screen Illustrations</h2>
-            <p>Design</p>
-          </li>
-          <li>
-            <img
-              src="./images/online-courses-min.jpg"
-              alt="woman smiling"
-              width="360"
-            />
-            <h2 class="exampl-title">Online Courses</h2>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/instagram-stories-concept-min.jpg"
-              alt="instagram stiries concept app"
-              width="360"
-            />
-            <h2 class="exampl-title">Instagram Stories Concept</h2>
-            <p>Design</p>
-          </li>
-          <li>
-            <img
-              src="./images/organic-food-min.jpg"
-              alt="woman with organic food"
-              width="360"
-            />
-            <h2 class="exampl-title">Organic Food</h2>
-            <p>Web Site</p>
-          </li>
-          <li>
-            <img
-              src="./images/fresh-coffee-min.jpg"
-              alt="a cup of coffee"
-              width="360"
-            />
-            <h2 class="exampl-title">Fresh Coffee</h2>
-            <p>Web Site</p>
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <button type="button" class="button-all button-filter">
+                All
+              </button>
+            </li>
+            <li>
+              <button type="button" class="button-webs button-filter">
+                Web Site
+              </button>
+            </li>
+            <li>
+              <button type="button" class="button-app button-filter">
+                App
+              </button>
+            </li>
+            <li>
+              <button type="button" class="button-desighn button-filter">
+                Design
+              </button>
+            </li>
+            <li>
+              <button type="button" class="button-marketing button-filter">
+                Marketing
+              </button>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img
+                src="./images/banking-app-min.jpg"
+                alt="banking app interface"
+                width="360"
+              />
+              <h2 class="exampl-title">Banking App Interface Concept</h2>
+              <p>App</p>
+            </li>
+            <li>
+              <img
+                src="./images/cashless-payment-min.jpg"
+                alt="cashless paiment app intrerface"
+                width="360"
+              />
+              <h2 class="exampl-title">Cashless Payment</h2>
+              <p>Marketing</p>
+            </li>
+            <li>
+              <img
+                src="./images/meditaion-app-min.jpg"
+                alt="meditation app"
+                width="360"
+              />
+              <h2 class="exampl-title">Meditaion App</h2>
+              <p>App</p>
+            </li>
+            <li>
+              <img
+                src="./images/taxi-service-min.jpg"
+                alt="taxi photo"
+                width="360"
+              />
+              <h2 class="exampl-title">Taxi Service</h2>
+              <p>Marketing</p>
+            </li>
+            <li>
+              <img
+                src="./images/screen-illustrations-min.jpg"
+                alt="screen illustrations app"
+                width="360"
+              />
+              <h2 class="exampl-title">Screen Illustrations</h2>
+              <p>Design</p>
+            </li>
+            <li>
+              <img
+                src="./images/online-courses-min.jpg"
+                alt="woman smiling"
+                width="360"
+              />
+              <h2 class="exampl-title">Online Courses</h2>
+              <p>Marketing</p>
+            </li>
+            <li>
+              <img
+                src="./images/instagram-stories-concept-min.jpg"
+                alt="instagram stiries concept app"
+                width="360"
+              />
+              <h2 class="exampl-title">Instagram Stories Concept</h2>
+              <p>Design</p>
+            </li>
+            <li>
+              <img
+                src="./images/organic-food-min.jpg"
+                alt="woman with organic food"
+                width="360"
+              />
+              <h2 class="exampl-title">Organic Food</h2>
+              <p>Web Site</p>
+            </li>
+            <li>
+              <img
+                src="./images/fresh-coffee-min.jpg"
+                alt="a cup of coffee"
+                width="360"
+              />
+              <h2 class="exampl-title">Fresh Coffee</h2>
+              <p>Web Site</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">

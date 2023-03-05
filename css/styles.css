@@ -7,7 +7,14 @@
 /* Accent color Hairlines Subtle backgrounds #E7E9FC */
 /* Helper text Deemphasized text Subtle text - #8E8F99 */
 
-
+/* html {
+    box-sizing: border-box;
+    }
+*.
+*::before,
+*::after {
+    box-sizing: inherit;
+}     */
 
 
 :root {
@@ -37,9 +44,22 @@
     line-height: 1.5;
 
 color:var(--body-text-color);}
+
+.container {margin-left: auto;
+margin-right: auto;
+width: 1128px;
+outline: 2px solid tomato;
+padding-left: 12px;
+padding-right: 12px;
+}
 /* header */
+.page-header {
+    /* background-color: #cccc; */
+}
 .header ul {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .header a {text-decoration: none; }
 /* -Logo- */
@@ -78,10 +98,28 @@ color:var(--body-text-color);}
 /* main */
 /* .main-page { color: var(--body-text-color);} */
 /* Hero-Section */
-.hero-one {color:var(--hero-text-color); font-size: 56px;
-    line-height: 1.07; text-align: center;}
-.section-hero-one { background-color:var(--hero-one-background-color);}
-.style-button {font-family: roboto, sans-serif;
+.hero-one {
+    margin-top: 0;
+    margin-bottom: 0;
+    color:var(--hero-text-color);
+    font-size: 56px;
+    line-height: 1.07;
+    /* text-align: center; */
+    padding-bottom: 48px; }
+.section-hero-one { 
+    background-color:var(--hero-one-background-color);
+    text-align: center;
+    margin-bottom: 120px;}
+.style-button {
+    /* display: inline-block; */
+     min-width: 169px;
+    min-height: 56px; 
+    border-radius: 4px;
+    padding: 16px 32px;
+    text-align: center;
+    /* border: 1px solid transparent; */
+
+    font-family: roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -89,21 +127,35 @@ color:var(--body-text-color);}
     cursor: pointer; 
     background-color:var(--primary-brand-button-color); 
     color:var(--button-text-hover-color); 
-    letter-spacing: 0.04em;}
+    letter-spacing: 0.04em; 
+    }
 .style-button:hover {background-color:var(--pressed-hover-button-color) ; letter-spacing: 0.04em;}
 .style-button:focus {background-color: var(--pressed-hover-button-color);
     letter-spacing: 0.04em;}
 
 /* section-features */
+.hidden {display: none;}
 .features {color: var(--body-text-color);}
-.features>ul {list-style: none;} 
-.headings-features {color: var(--headings-dark-color); 
+.features ul {list-style: none;
+   margin-top: 0;
+   margin-bottom: 120px;} 
+.headings-features {
+    margin-top: 0;
+    margin-bottom: 8px;
+    
+    color: var(--headings-dark-color); 
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;}
+.features p { margin-top: 0;
+margin-bottom: 0;}
 
-.title { font-family: 'Roboto'; 
+.title { 
+    margin-top: 0;
+    margin-bottom: 72px;
+
+    font-family: 'Roboto'; 
     font-weight: 700; 
     font-size: 36px;
     line-height: 1.11; 
@@ -111,25 +163,44 @@ color:var(--body-text-color);}
     letter-spacing: 0.02em;
     text-transform: capitalize;}
 
-.title-team {color: var(--headings-dark-color); font-family: 'Roboto'; 
+.title-team {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: var(--headings-dark-color); 
+    font-family: 'Roboto'; 
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;} 
 
 /* What we are doing */
-.examples>ul { list-style: none;}
+.examples ul { 
+    list-style: none;
+    margin-top: 0; 
+    margin-bottom: 0;}
 
 /* our team  */
-.team {background-color: var(--light-mode-backgrounds);}
-.team>ul {list-style: none;}
+.team {
+    background-color: var(--light-mode-backgrounds);
+    padding-top: 120px;
+    padding-bottom: 120px;}
+.team ul {list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;}
 
 
 /*PAGE PORTFOLIO */
 /* main  */
 .main-page {color: var(--body-text-color);}
+.title-portfolio { 
+    margin-top: 0;
+    margin-bottom: 0;}
 /* filters  */
-.filters ul {list-style: none;}
+.filters ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;}
 .button-filter {font-family: roboto, sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -175,10 +246,16 @@ color:var(--body-text-color);}
             background-color: var(--pressed-hover-button-color);
         }
         
-        .portfolio>ul {list-style: none;} 
-        .exampl-title { color: var(--headings-dark-color);
+        .portfolio ul { 
+            list-style: none;
+            margin-top: 0;
+            margin-bottom: 0;} 
+        .exampl-title { 
+            margin-top: 0;
+            margin-bottom: 0;
             
-           
+            color: var(--headings-dark-color);
+                     
             font-weight: 500;
             font-size: 20px;
             line-height: 1.2;
