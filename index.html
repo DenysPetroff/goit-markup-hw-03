@@ -19,43 +19,46 @@
   <body class="body">
     <!-- HEADER -->
     <header class="header page-header">
-      <nav class="container">
-        <a href="./index.html" class="logo">Web<span>Studio</span></a>
-        <ul>
-          <li><a href="./index.html" class="nav-header">Studio</a></li>
-          <li><a href="./portfolio.html" class="nav-header">Portfolio</a></li>
-          <li><a href="" class="nav-header">Contacts</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul>
-          <li>
-            <a href="mailto:info@devstudio.com" class="adress-list"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+110001111111" class="adress-list"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container header-flex">
+        <nav class="site-nav">
+          <a href="./index.html" class="logo">Web<span>Studio</span></a>
+          <ul class="nav-item">
+            <li><a href="./index.html" class="nav-header">Studio</a></li>
+            <li><a href="./portfolio.html" class="nav-header">Portfolio</a></li>
+            <li><a href="" class="nav-header">Contacts</a></li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="adress">
+            <li>
+              <a href="mailto:info@devstudio.com" class="adress-list"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="adress-list"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
 
     <!-- MAIN -->
     <main class="main-page">
-      <!-- hero -->
+      <!-- HERO -->
       <section class="section-hero-one">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero-one">Effective Solutions for Your Business</h1>
           <button type="button" class="style-button">Order Service</button>
         </div>
       </section>
+      <!-- FEATURES  -->
       <section class="features">
         <div class="container">
           <h2 class="title hidden">Our features</h2>
-          <ul>
+          <ul class="features-flex">
             <li>
               <h3 class="headings-features">Strategy</h3>
               <p>
@@ -87,10 +90,11 @@
           </ul>
         </div>
       </section>
+      <!-- EXAMPLES  -->
       <section class="examples">
         <div class="container">
           <h2 class="title">What are we doing</h2>
-          <ul>
+          <ul class="examples-flex">
             <li>
               <img src="./images/monitor.jpg" alt="monitor image" width="360" />
             </li>
@@ -115,53 +119,58 @@
       <section class="team">
         <div class="container">
           <h2 class="title">Our Team</h2>
-          <ul>
-            <li>
+          <ul class="team-flex">
+            <li class="team-flex-item">
               <img
                 src="./images/MarkGuerrero.jpg"
                 alt="Mark Guerro photo"
                 width="264"
               />
               <h3 class="title-team">Mark Guerrero</h3>
-              <p>Product Designer</p>
+              <p class="text-team">Product Designer</p>
             </li>
-            <li>
+            <li class="team-flex-item">
               <img
                 src="./images/TomFord.jpg"
                 alt="Tom Ford Photo"
                 width="264"
               />
               <h3 class="title-team">Tom Ford</h3>
-              <p>Frontend Developer</p>
+              <p class="text-team">Frontend Developer</p>
             </li>
-            <li>
+            <li class="team-flex-item">
               <img
                 src="./images/CamilaGarcia.jpg"
                 alt="Camilla Garsia Photo"
                 width="264"
               />
               <h3 class="title-team">Camila Garcia</h3>
-              <p>Marketing</p>
+              <p class="text-team">Marketing</p>
             </li>
-            <li>
+            <li class="team-flex-item">
               <img
                 src="./images/DanielWilson.jpg"
                 alt="Daniel Wilson Photo"
                 width="264"
               />
               <h3 class="title-team">Daniel Wilson</h3>
-              <p>UI Designer</p>
+              <p class="text-team">UI Designer</p>
             </li>
           </ul>
         </div>
       </section>
     </main>
+    <!-- FOOTER  -->
     <footer class="footer">
-      <a href="./index.html" class="logo-footer">Web<span>Studio</span></a>
-      <p>
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+      <div class="container">
+        <div class="footer-flex">
+          <a href="./index.html" class="logo-footer">Web<span>Studio</span></a>
+          <p>
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
