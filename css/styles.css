@@ -145,7 +145,8 @@ padding-right: 12px;
 .section-hero-one { 
     background-color:var(--hero-one-background-color);
     text-align: center;
-    margin-bottom: 120px;}
+    /* margin-bottom: 120px; */
+}
     
 .hero-container {
    
@@ -178,10 +179,13 @@ padding-right: 12px;
 
 /* section-features */
 .hidden {display: none;}
-.features {color: var(--body-text-color);}
+.features {color: var(--body-text-color);
+           padding-top: 120px;
+            /* padding-bottom: 120px; */
+        }
 .features ul {list-style: none;
    margin-top: 0;
-   margin-bottom: 120px;} 
+   margin-bottom: 0;} 
 
 .features-flex { 
     display: flex; 
@@ -238,6 +242,9 @@ margin-bottom: 0;}
 }
 
 /* What we are doing */
+.examples {
+    padding-top: 120px;
+}
 .examples ul { 
     list-style: none;
     margin-top: 0; 
